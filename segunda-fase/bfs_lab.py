@@ -66,7 +66,7 @@ if __name__ == "__main__":
     if inicio_coords is None or fim_coords is None:
         print("Ponto de início 'S' ou fim 'E' não encontrado no labirinto.")
     else:
-        print("Exemplo 1: BFS no Labirinto")
+        print("BFS no Labirinto")
         print("Labirinto original:")
         for linha in labirinto_exemplo:
             print("".join(linha))
