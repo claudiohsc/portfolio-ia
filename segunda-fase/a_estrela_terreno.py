@@ -11,7 +11,7 @@ def a_estrela_grade_custos(grade_custos, inicio, objetivo, pesos_terreno):
     Encontra o caminho de menor custo em uma grade com custos de movimento variáveis usando A*.
 
     paramentros:
-        grade_custos (list[list[str]]): Grade representando o terreno.
+        grade_custos: Grade representando o terreno com as letras.
                                      Ex: 'G' para grama, 'A' para água, 'M' para montanha.
                                      'S' para início, 'E' para fim. '#' para obstáculo.
         inicio: Coordenadas (linha, coluna) do início.
@@ -19,10 +19,7 @@ def a_estrela_grade_custos(grade_custos, inicio, objetivo, pesos_terreno):
         pesos_terreno (dicionario):  com os custos de movimento para cada tipo de terreno.
                                Ex: {'G': 1, 'A': 5, 'M': 10, 'S':1, 'E':1}
 
-    Retorno:
-        tuple: 
-               O caminho (lista de coordenadas) e o custo total, 
-               ou (None, float('inf')) se não houver caminho.
+    Retorna um (caminho e o custo total). Se não houver caminho, retorna None, infinito;
     """
     linhas = len(grade_custos)
     colunas = len(grade_custos[0])

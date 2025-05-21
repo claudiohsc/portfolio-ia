@@ -1,9 +1,9 @@
 import random
 import string
 
-# --- Parâmetros gerais ---
+# Parâmetros gerais
 FRASE_ALVO = "algoritmo genetico teste" #pode escolher a frase nessa linha, deixe em string
-CARACTERES_VALIDOS = string.ascii_letters + string.digits + " " + "!.,?" # Inclui espaço e alguns símbolos
+CARACTERES_VALIDOS = string.ascii_letters + string.digits + " " + "!.,?" # Inclui espaço e mias alguns símbolos
 TAMANHO_POPULACAO = 150
 TAXA_DE_MUTACAO = 0.02  
 TAXA_DE_CROSSOVER = 0.85 
